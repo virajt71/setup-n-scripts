@@ -2,14 +2,14 @@
 echo "update asdf"
 asdf update
 
-echo "add aws-vault"
+echo "plugin add aws-vault"
 asdf plugin add aws-vault
 
-echo "add awscli"
+echo "plugin add awscli"
 asdf plugin add awscli
 
-echo "add terraform"
+echo "plugin add terraform"
 asdf plugin add terraform
 
-echo "add terragrunt"
+echo "plugin add terragrunt"
 asdf plugin add terragrunt
