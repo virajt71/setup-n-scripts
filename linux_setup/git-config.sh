@@ -5,10 +5,10 @@ echo "-----------------------"
 
 # Set Git configuration settings
 git config --global core.editor "vim"
+git config --global core.autocrlf 'false'
 git config --global color.ui true
 # git config --global alias.st status
 # git config --global push.default current
-git config --global core.autocrlf 'false'
 git config --global credential.helper 'manager-core'
 git config --global credential.credentialStore 'gpg'
 git config --global commit.gpgsign 'true'
