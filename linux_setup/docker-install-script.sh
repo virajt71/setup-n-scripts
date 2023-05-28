@@ -12,15 +12,7 @@ echo -n "$x"
 sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce
-sudo systemctl status docker
-
 echo -n "$x"
-echo "..............................."
-echo "Run docker without sudo command"
-echo "..............................."
-sudo usermod -aG docker ${USER}
-su - ${USER}
-groups
-sudo usermod -aG docker ${USER}
-
-docker
+echo "press q to exit"
+echo -n "$x"
+sudo systemctl status docker
