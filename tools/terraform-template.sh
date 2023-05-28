@@ -30,7 +30,7 @@ then
 variable "region" {
   description = "AWS region to create resources in"
   type  = string
-  default = "ap-southeast-2"
+  default = "eu-central-1"
 }
 VARIABLES
 fi
