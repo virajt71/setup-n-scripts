@@ -2,14 +2,20 @@
 echo "update asdf"
 asdf update
 
-echo "plugin add aws-vault"
-asdf plugin add aws-vault
+declare -a tools=("awscli" "aws-vault" "terraform" "terragrunt")
 
-echo "plugin add awscli"
-asdf plugin add awscli
+echo "......................"
+for tool in "${tools[@]}"
+do
+  echo "-> Adding plugin $tool"
+  asdf plugin add "$tool" 
+done
 
-echo "plugin add terraform"
-asdf plugin add terraform
+echo "......................"
+for tool in "${tools[@]}"
+do
+  echo "-> Installing $tool"
+  asdf install "$tool" latest
+done
 
-echo "plugin add terragrunt"
-asdf plugin add terragrunt
+echo "Run 'asdf <global|shell|local> <tools> <version>' to set version "

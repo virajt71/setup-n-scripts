@@ -13,6 +13,7 @@ git config --global credential.helper 'manager-core'
 git config --global credential.credentialStore 'gpg'
 git config --global commit.gpgsign 'true'
 
+
 # Prompt for user input
 read -p "Enter your name: " name
 read -p "Enter your email: " email
@@ -39,5 +40,8 @@ else
     gpg --armor --export "$key"
     echo "Copy the exported key and add it under github gpg"
 fi
+
+GPG_TTY=$(tty)
+export GPG_TTY
 
 git config --list
