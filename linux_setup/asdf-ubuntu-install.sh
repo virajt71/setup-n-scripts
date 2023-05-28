@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# please install hyper on windows before running this script https://hyper.is/#installation
+echo "please install hyper on windows before running this script https://hyper.is/#installation"
 
 echo "update & upgrade"
 sudo apt-get update && sudo apt-get upgrade -y
