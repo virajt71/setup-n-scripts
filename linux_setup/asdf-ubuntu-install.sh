@@ -3,7 +3,7 @@ echo "please install hyper on windows before running this script https://hyper.i
 
 echo "update & upgrade"
 sudo ntpdate ntp.ubuntu.com
-sudo apt-get install ntp
+sudo apt-get -y install ntp
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get -y install xdg-utils
 
