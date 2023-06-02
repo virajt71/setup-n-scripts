@@ -16,4 +16,11 @@ do
   asdf install "$tool" latest
 done
 
-echo "Run 'asdf <global|shell|local> <tools> <version>' to set version "
+echo "......................"
+asdf global aws-vault 7.2.0
+echo "......................"
+for tool in awscli terraform terragrunt;
+do
+  echo "-> Global $tool"
+  asdf global "$tool" latest
+done
