@@ -16,6 +16,11 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3
 
 echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
 echo ". "$HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
+echo "alias cl='clear'" >> ~/.bashrc
+echo "alias add='git add '" >> ~/.bashrc
+echo "alias commit='git commit -m '" >> ~/.bashrc
+echo "alias push='git push'" >> ~/.bashrc
+echo "alias fetch='git fetch'" >> ~/.bashrc
+echo "alias pull='git pull'" >> ~/.bashrc
 
-asdf update
-source ~/.bashrc
+echo "Run source ~/.bashrc"
