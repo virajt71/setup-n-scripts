@@ -4,21 +4,25 @@ echo "........................................"
 echo "update & upgrade"
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get -y install xdg-utils
+echo -n "$x"
 
 echo "........................................"
 echo "Install apt modules"
 sudo apt-get install -y curl git
 sudo apt-get install -y unzip
 sudo apt-get install -y pass gpg
+echo -n "$x"
 
 echo "........................................"
 echo "Instal asdf"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3
+echo -n "$x"
 
 echo "........................................"
 echo "set local time"
 sudo unlink /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+echo -n "$x"
 
 echo "........................................"
 echo "alias cl='clear'" >> ~/.bashrc
@@ -31,6 +35,7 @@ echo "alias status='git status'" >> ~/.bashrc
 echo "alias diff='git diff'" >> ~/.bashrc
 echo "alias tf='terraform'" >> ~/.bashrc
 echo "alias tg='terragrunt'" >> ~/.bashrc
+echo -n "$x"
 
 echo "........................................"
 echo "Run following"
