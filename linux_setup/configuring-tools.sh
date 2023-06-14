@@ -24,8 +24,7 @@ do
 done
 
 echo "......................"
-for tool in awscli aws-sso-cli terraform terragrunt;
-do
-  echo "-> local $tool"
-  asdf local "$tool" latest
-done
+echo "asdf local awscli latest"
+echo "asdf local aws-sso-cli latest"
+echo "asdf local terraform latest"
+echo "asdf local terragrunt latest"
