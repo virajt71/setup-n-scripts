@@ -16,6 +16,11 @@ echo "Instal asdf"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3
 
 echo "........................................"
+echo "set local time"
+sudo unlink /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+
+echo "........................................"
 echo "alias cl='clear'" >> ~/.bashrc
 echo "alias add='git add '" >> ~/.bashrc
 echo "alias commit='git commit -m '" >> ~/.bashrc
