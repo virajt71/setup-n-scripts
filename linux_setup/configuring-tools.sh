@@ -16,10 +16,16 @@ do
   asdf install "$tool" latest
 done
 
-
 echo "......................"
 for tool in awscli aws-sso-cli terraform terragrunt;
 do
   echo "-> Global $tool"
   asdf global "$tool" latest
+done
+
+echo "......................"
+for tool in awscli aws-sso-cli terraform terragrunt;
+do
+  echo "-> Global $tool"
+  asdf local "$tool" latest
 done
