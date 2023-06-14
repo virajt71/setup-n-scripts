@@ -22,6 +22,8 @@ echo "alias commit='git commit -m '" >> ~/.bashrc
 echo "alias push='git push'" >> ~/.bashrc
 echo "alias fetch='git fetch'" >> ~/.bashrc
 echo "alias pull='git pull'" >> ~/.bashrc
+echo "alias status='git status'" >> ~/.bashrc
+echo "alias diff='git diff'" >> ~/.bashrc
 echo "alias tf='terraform'" >> ~/.bashrc
 echo "alias tg='terragrunt'" >> ~/.bashrc
 
