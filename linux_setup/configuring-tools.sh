@@ -26,6 +26,6 @@ done
 echo "......................"
 for tool in awscli aws-sso-cli terraform terragrunt;
 do
-  echo "-> Global $tool"
+  echo "-> local $tool"
   asdf local "$tool" latest
 done
