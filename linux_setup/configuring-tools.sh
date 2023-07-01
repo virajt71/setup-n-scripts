@@ -25,9 +25,3 @@ do
   asdf global "$tool" latest
 done
 echo -n "$x"
-
-echo "......................"
-echo "asdf local awscli latest"
-echo "asdf local aws-sso-cli latest"
-echo "asdf local terraform latest"
-echo "asdf local terragrunt latest"
