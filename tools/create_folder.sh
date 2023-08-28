@@ -7,7 +7,7 @@ touch accounts/root.yaml
 touch accounts/terragrunt.hcl
 mkdir modules
 
-cat << EOF > ..gitattributes
+cat << EOF > .gitattributes
 * text eol=lf
 EOF
 
