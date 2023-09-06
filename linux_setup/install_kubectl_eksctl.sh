@@ -21,3 +21,17 @@ echo "Installing eksctl"
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/bin
 eksctl version
+
+# command to create EKs cluster
+# eksctl create cluster 
+#     --name dev 
+#     --region us-east-1 
+#     --nodegroup-name standard-workers 
+#     --node-type t3.medium 
+#     --nodes 3 
+#     --nodes-min 1 
+#     --nodes-max 4 
+#     --managed
+
+# command to connect to EKS cluster
+# aws eks update-kubeconfig --name dev --region us-east-1
