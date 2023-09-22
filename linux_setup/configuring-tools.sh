@@ -3,29 +3,24 @@ echo "update asdf"
 asdf update
 
 echo "......................"
-for tool in awscli aws-sso-cli terraform terragrunt;
+for tool in aws-sso-cli aws-vault awscli eksctl k9s kubectl minikube sops terraform terragrunt;
 do
   echo "-> Adding plugin $tool"
   asdf plugin add "$tool" 
 done
 
 echo "......................"
-for tool in awscli aws-sso-cli terraform terragrunt;
+for tool in aws-sso-cli aws-vault awscli eksctl k9s kubectl minikube sops terraform terragrunt;
 do
   echo "-> Installing $tool"
   asdf install "$tool" latest
 done
-
 echo "......................"
-for tool in awscli aws-sso-cli terraform terragrunt;
+asdf list
+echo "......................"
+for tool in aws-sso-cli aws-vault awscli eksctl k9s kubectl minikube sops terraform terragrunt;
 do
   echo "-> Global $tool"
   asdf global "$tool" latest
 done
 
-echo "......................"
-for tool in terraform terragrunt;
-do
-  echo "-> local $tool"
-  asdf local "$tool" latest
-done
