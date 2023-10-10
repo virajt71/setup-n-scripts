@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 echo "please install hyper on windows before running this script https://hyper.is/#installation"
 
 echo "update & upgrade"

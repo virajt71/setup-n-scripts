@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-#!/usr/bin/env bash
 set -e
 
 echo "Create base terraform templates"

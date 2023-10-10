@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 echo "update asdf"
 asdf update
 
