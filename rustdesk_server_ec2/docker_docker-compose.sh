@@ -2,7 +2,7 @@
 
 echo "......................"
 echo "Download script"
-wget -O install-docker.sh  https://github.com/virajt71/setup-n-scripts/linux_setup/install-docker-others.sh
+wget -O install-docker.sh  https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/install-docker-others.sh
 
 echo "......................"
 echo "providing permission"
