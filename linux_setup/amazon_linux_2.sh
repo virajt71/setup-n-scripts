@@ -10,5 +10,5 @@ sudo mv docker-compose-$(uname -s)-$(uname -m) /usr/libexec/docker/cli-plugins/d
 sleep 1
 chmod +x /usr/libexec/docker/cli-plugins/docker-compose
 sleep 5
-systemctl enable docker.service --now
+sudo systemctl enable docker.service --now
 sudo usermod -a -G docker ec2-user
