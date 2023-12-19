@@ -28,7 +28,7 @@ for choice in "${choices_array[@]}"; do
         if [[ "$choice" -eq 3 ]]; then
             docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
         else
-            sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/ubuntu%20install%20script/${options[$choice]})"
+            sh -c "$(curl -fsSL https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/ubuntu%20install%20script/${options[$choice]})"
         fi
     else
         echo "Invalid choice: $choice"
