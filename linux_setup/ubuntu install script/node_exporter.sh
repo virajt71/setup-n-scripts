@@ -1,6 +1,7 @@
 echo ".............."
 echo "Install node exporter"
 echo ".............."
+sudo apt update 
 sudo useradd \
     --system \
     --no-create-home \

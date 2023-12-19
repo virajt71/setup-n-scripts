@@ -4,7 +4,7 @@ echo ".............."
 echo "Install java"
 echo ".............."
 sudo apt update
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jdk -y
 java -version
 sudo update-alternatives --config java
 sudo update-alternatives --list java

@@ -3,7 +3,7 @@
 echo ".............."
 echo "Install prometheus"
 echo ".............."
-sudo apt update
+sudo apt update 
 sudo useradd \
     --system \
     --no-create-home \
