@@ -38,4 +38,4 @@ EOF
 systemctl daemon-reload
 sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
-echo "prometheus installed"
+echo "node_exporter installed"
