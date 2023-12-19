@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo ".............."
-echo "Install trivy"
+echo "Install prometheus"
 echo ".............."
 sudo apt update
 sudo useradd \
@@ -50,3 +50,4 @@ EOF
 systemctl daemon-reload
 systemctl enable prometheus.service
 systemctl start prometheus.service
+echo "prometheus installed"
