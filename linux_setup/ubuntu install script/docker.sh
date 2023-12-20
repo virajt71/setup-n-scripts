@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo ".............."
 echo "Install docker"
@@ -15,6 +15,3 @@ sudo usermod -aG docker $USER
 newgrp docker
 sudo chmod 777 /var/run/docker.sock
 echo -n "$x"
-echo "press q to exit"
-echo -n "$x"
-sudo systemctl status docker

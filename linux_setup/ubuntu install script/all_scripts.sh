@@ -7,6 +7,7 @@ declare -A options=(
     [4]="trivy.sh"
     [5]="prometheus.sh"
     [6]="node_exporter.sh"
+    [7]="grafana.sh"
 )
 
 echo "Choose options to run (separate by spaces):"
@@ -16,6 +17,7 @@ echo "3. SonarQube installation"
 echo "4. Trivy installation"
 echo "5. Prometheus installation"
 echo "6. Node Exporter installation"
+echo "7. Grafana installation"
 
 read -p "Enter your choices (1-6, separated by spaces): " choices
 
@@ -27,8 +29,10 @@ for choice in "${choices_array[@]}"; do
     if [[ "${options[$choice]}" ]]; then
         if [[ "$choice" -eq 3 ]]; then
             docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+        elif [[ "$choice" -eq 5 || "$choice" -eq 6 ]]; then
+            sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/ubuntu%20install%20script/${options[$choice]})"
         else
-            sh -c "$(curl -fsSL https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/ubuntu%20install%20script/${options[$choice]})"
+            bash -c "$(curl -fsSL https://raw.githubusercontent.com/virajt71/setup-n-scripts/main/linux_setup/ubuntu%20install%20script/${options[$choice]})"
         fi
     else
         echo "Invalid choice: $choice"
