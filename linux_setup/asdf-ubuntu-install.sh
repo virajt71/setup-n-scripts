@@ -3,8 +3,8 @@
 echo "please install hyper on windows before running this script https://hyper.is/#installation"
 
 echo "update & upgrade"
-sudo ntpdate ntp.ubuntu.com
 sudo apt-get -y install ntp
+ntpd -p
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get -y install xdg-utils
 
@@ -22,4 +22,4 @@ echo "Update Oh my zsh plugins"
 sed -i -e 's/^\(plugins=(.*\))$/\1 asdf)/' ~/.zshrc
 
 asdf update
-source ~/.zshrc
+echo "source ~/.zshrc"

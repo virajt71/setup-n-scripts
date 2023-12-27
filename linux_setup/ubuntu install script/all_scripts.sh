@@ -19,7 +19,7 @@ echo "5. Prometheus installation"
 echo "6. Node Exporter installation"
 echo "7. Grafana installation"
 
-read -p "Enter your choices (1-6, separated by spaces): " choices
+read -p "Enter your choices (1-7, separated by spaces): " choices
 
 # Split the input choices into an array
 read -r -a choices_array <<< "$choices"
