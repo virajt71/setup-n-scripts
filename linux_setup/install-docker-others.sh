@@ -687,10 +687,10 @@ echo "Let's figure out which OS / Distro you are running."
 echo ""
 echo ""
 echo "    From some basic information on your system, you appear to be running: "
-echo "        --  OS Name        " $(lsb_release -i)
-echo "        --  Description        " $(lsb_release -d)
-echo "        --  OS Version        " $(lsb_release -r)
-echo "        --  Code Name        " $(lsb_release -c)
+echo "        --  OS Name       " $(lsb_release -i)
+echo "        --  Description   " $(lsb_release -d)
+echo "        --  OS Version    " $(lsb_release -r)
+echo "        --  Code Name     " $(lsb_release -c)
 echo ""
 echo "------------------------------------------------"
 echo ""
