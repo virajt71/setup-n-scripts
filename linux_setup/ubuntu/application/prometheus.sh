@@ -2,7 +2,8 @@
 
 echo ".............."
 echo "Install prometheus"
-echo ".............."
+echo " "
+
 sudo apt update 
 sudo useradd \
     --system \

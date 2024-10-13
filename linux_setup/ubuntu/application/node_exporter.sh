@@ -2,7 +2,8 @@
 
 echo ".............."
 echo "Install node exporter"
-echo ".............."
+echo " "
+
 sudo apt update 
 sudo useradd \
     --system \

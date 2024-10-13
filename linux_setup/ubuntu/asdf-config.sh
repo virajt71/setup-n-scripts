@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -a tools=("aws-sso-cli" "aws-vault" "awscli" "eksctl" "elasticsearch" "k9s" "kubectl" "minikube" "sops" "terraform" "terragrunt")
+declare -a tools=("awscli" "eksctl"  "k9s" "kubectl" "minikube" "sops" "terraform" "terragrunt")
 
 echo "Updating asdf"
 asdf update

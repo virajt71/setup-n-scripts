@@ -2,7 +2,8 @@
 
 echo ".............."
 echo "Install java"
-echo ".............."
+echo " "
+
 sudo apt update
 sudo apt install openjdk-17-jdk -y
 java -version
@@ -13,7 +14,8 @@ echo -n "$x"
 
 echo ".............."
 echo "Install jenkins"
-echo ".............."
+eecho " "
+
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \

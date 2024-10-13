@@ -2,7 +2,8 @@
 
 echo ".............."
 echo "Install grafana"
-echo ".............."
+echo " "
+
 sudo apt-get update
 sudo apt-get install -y apt-transport-https software-properties-common
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -

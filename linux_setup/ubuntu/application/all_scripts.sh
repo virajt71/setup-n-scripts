@@ -8,6 +8,7 @@ declare -A options=(
     [5]="prometheus.sh"
     [6]="node_exporter.sh"
     [7]="grafana.sh"
+    [8]="azure.sh"
 )
 
 echo "Choose options to run (separate by spaces):"

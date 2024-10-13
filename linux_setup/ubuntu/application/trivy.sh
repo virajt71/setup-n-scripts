@@ -2,7 +2,8 @@
 
 echo ".............."
 echo "Install trivy"
-echo ".............."
+echo " "
+
 sudo apt update 
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
