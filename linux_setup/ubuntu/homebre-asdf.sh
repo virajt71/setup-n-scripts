@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update -y 
-sudo apt install curl -y && sudo apt install git -y && sudo apt install unzip -y && sudo apt upgrade -y
+sudo apt install curl -y && sudo apt install git -y && sudo apt install unzip -y && sudo apt-get install -y pass gpg && sudo apt upgrade -y
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
