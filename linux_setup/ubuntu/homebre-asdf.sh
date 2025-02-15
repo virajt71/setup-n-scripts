@@ -24,5 +24,5 @@ brew install gcc
 brew install asdf
 
 # add to ~/.bashrc  
-echo -e "\n. \"$(brew --prefix asdf)/libexec/asdf.sh\"" >> ~/.bashrc
-echo -e "\n. \"$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash\"" >> ~/.bashrc
+echo -e "\n. \export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"\" >> ~/.bash_profile
+echo -e "\n. \. <(asdf completion bash)\" >> ~/.bashrc
