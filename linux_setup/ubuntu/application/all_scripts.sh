@@ -19,6 +19,7 @@ echo "4. Trivy installation"
 echo "5. Prometheus installation"
 echo "6. Node Exporter installation"
 echo "7. Grafana installation"
+echo "8. azure installation"
 
 read -p "Enter your choices (1-7, separated by spaces): " choices
 
