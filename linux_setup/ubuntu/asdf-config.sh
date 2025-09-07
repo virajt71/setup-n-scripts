@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -a tools=("awscli" "eksctl" "k9s" "kubectl" "minikube" "sops" "terraform" "terraform-validator" "terragrunt")
+declare -a tools=("awscli" "eksctl" "k9s" "kubectl" "minikube" "sops" "terraform" "terraform-validator" "terragrunt" "tmux")
 
 echo "Updating asdf"
 asdf update
@@ -12,7 +12,7 @@ for tool in "${tools[@]}"; do
   echo "-> Installing $tool"
   asdf install "$tool" latest
   echo "-> Setting version $tool"
-  asdf global "$tool" latest
+  asdf set -p "$tool" latest
 done
 
 echo "......................"
